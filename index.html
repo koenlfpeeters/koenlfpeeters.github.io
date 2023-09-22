@@ -1,13 +1,64 @@
-<style>
-body {
-  background-image: url('boulderchallenge.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: contain;
-  background-color: black;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KLIMAX BOULDER CHALLENGE 2023</title>
+    <style>
+        body {
+            background-image: url('boulderchallenge.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: contain;
+            background-color: black;
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
+            display: flex;
+            justify-content: space-between; /* Separate links on the left and right */
+            align-items: center; /* Center vertically */
+        }
 
-  <p>Click to <a href="http://www.bvkb.be">reserve your spot here</a>.</p>
-  
-}
-</style>
+        .link-container {
+            width: 45%; /* Adjust the width of the link containers as needed */
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .left-link {
+            left: -30px; /* Move three times as much to the left */
+        }
+
+        .right-link {
+            right: -30px; /* Move three times as much to the right */
+        }
+
+        a {
+            text-decoration: none;
+            color: white; /* Set the font color to white */
+            font-weight: bold;
+            font-size: 2em; /* Set the font size to be 2 times as big */
+            margin: 10px auto; /* Center text horizontally within each link container */
+            font-family: "Aharoni", sans-serif; /* Set the font family to Aharoni */
+            text-transform: uppercase; /* Transform the text to uppercase */
+            
+            /* Add white text shadow */
+            text-shadow: 2px 2px 6px white; /* You can adjust the shadow values as needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="link-container left-link">
+        <a href="http://www.bvkb.be" target="_blank">RESERVE YOUR SPOT</a>
+    </div>
+    <div class="link-container right-link">
+        <a href="http://www.bvkb.be" target="_blank">RESERVE YOUR SPOT</a>
+    </div>
+</body>
+</html>

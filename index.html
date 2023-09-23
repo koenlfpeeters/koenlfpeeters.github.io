@@ -3,62 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KLIMAX BOULDER CHALLENGE 2023</title>
+    <title>Boulder Challenge 2023</title>
     <style>
         body {
+            background-color: black; /* Set the background color to black */
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
+        }
+
+        .button {
+            display: inline-block;
+            background-color: orange; /* Set the button background color to orange */
+            border-radius: 10px; /* Add rounded corners */
+            padding: 10px 20px; /* Add padding for spacing */
+            margin: 20px; /* Add margin for spacing */
+        }
+
+        .text {
+            color: white; /* Set the font color to white */
+            font-weight: bold;
+            font-size: 2em;
+            font-family: "Aharoni", sans-serif; /* Set the font family to Aharoni */
+            text-transform: uppercase; /* Transform the text to uppercase */
+            text-align: center; /* Center-align the text horizontally */
+        }
+
+        .text a {
+            text-decoration: none; /* Remove underline from the link */
+            color: white; /* Set the link color to white */
+        }
+
+        .background-image {
             background-image: url('boulderchallenge.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
-            background-position: center;
+            background-position: center top; /* Position the image at the top */
             background-size: contain;
-            background-color: black;
-            margin: 0; /* Remove default body margin */
-            padding: 0; /* Remove default body padding */
-            display: flex;
-            justify-content: space-between; /* Separate links on the left and right */
-            align-items: center; /* Center vertically */
-        }
-
-        .link-container {
-            width: 45%; /* Adjust the width of the link containers as needed */
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .left-link {
-            left: -30px; /* Move three times as much to the left */
-        }
-
-        .right-link {
-            right: -30px; /* Move three times as much to the right */
-        }
-
-        a {
-            text-decoration: none;
-            color: white; /* Set the font color to white */
-            font-weight: bold;
-            font-size: 2em; /* Set the font size to be 2 times as big */
-            margin: 10px auto; /* Center text horizontally within each link container */
-            font-family: "Aharoni", sans-serif; /* Set the font family to Aharoni */
-            text-transform: uppercase; /* Transform the text to uppercase */
-            
-            /* Add white text shadow */
-            text-shadow: 2px 2px 6px white; /* You can adjust the shadow values as needed */
+            height: 100vh; /* Cover the entire viewport height */
+            width: 100%; /* Cover the entire viewport width */
+            position: relative;
         }
     </style>
 </head>
 <body>
-    <div class="link-container left-link">
-        <a href="http://www.bvkb.be" target="_blank">RESERVE YOUR SPOT</a>
+    <div class="text">
+        <a href="http://www.bvkb.be" target="_blank">
+            <div class="button">RESERVE YOUR SPOT</div>
+        </a>
     </div>
-    <div class="link-container right-link">
-        <a href="http://www.bvkb.be" target="_blank">RESERVE YOUR SPOT</a>
-    </div>
+    <div class="background-image"></div>
 </body>
 </html>
